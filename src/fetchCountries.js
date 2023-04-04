@@ -27,11 +27,5 @@ export default class Countries {
         
     }
 
-    // get nameCountry() {
-    //     return this.inputNameCountry;
-    // }
     
-    // set nameCountry(newNameCountry) {
-    //     this.inputNameCountry = newNameCountry;
-    // }
 }

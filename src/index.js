@@ -8,7 +8,8 @@ const DEBOUNCE_DELAY = 300;
 const inputEl = document.querySelector('#search-box')
 const listCoutryEl = document.querySelector('.country-list')
 const infoCountryEl = document.querySelector('.country-info')
-      
+ 
+Notiflix.Notify.init({ position: 'center-top' })
 
 inputEl.addEventListener('input', debounce(onSearchCountry, DEBOUNCE_DELAY));
 const country = new Countries();
