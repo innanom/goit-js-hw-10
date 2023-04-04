@@ -14,7 +14,42 @@ body {
 
 #search-box {
   font: inherit;
-  padding: 8px;
+  padding: px;
   max-width: 320px;
   margin-bottom: 16px;
+  margin-left: 40px;
+}
+
+ul {
+  list-style: none;
+  
+}
+
+.country-list__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size:20px;
+  font-style:oblique;
+  font-weight: 600;
+  
+
+
+}
+
+.country-info {
+  margin: 10px;
+}
+
+.country-info__name {
+  font-size: 20px;
+    font-style:unset;
+    font-weight: 800;
+}
+
+.country-info__span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
 }
