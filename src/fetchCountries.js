@@ -1,3 +1,4 @@
+import Notiflix from 'notiflix';
 export default class Countries {
     constructor() {
         this.inputNameCountry ='';
@@ -13,23 +14,24 @@ export default class Countries {
     const url = `https://restcountries.com/v3.1/name/${this.inputNameCountry}?fields=${this.officialName},${this.population},${this.capital},${this.flags},${this.languages}`;
     
         return fetch(url).then(r => {
-      if (!r.ok) {
-        if (r.status === 404) {
-          Notiflix.Notify.failure('Oops, there is no country with that name');
-        }
-        throw Error;
-      }
+            if (!r.ok) {
+                if (r.status === 404) {
+                    Notiflix.Notify.failure('Oops, there is no country with that name');
+                }
+                throw Error;
+            }
     
-      return r.json();
-})
+            return r.json();
+        })
+           
         
     }
 
-    get nameCountry() {
-        return this.inputNameCountry;
-    }
+    // get nameCountry() {
+    //     return this.inputNameCountry;
+    // }
     
-    set nameCountry(newNameCountry) {
-        this.inputNameCountry = newNameCountry;
-    }
+    // set nameCountry(newNameCountry) {
+    //     this.inputNameCountry = newNameCountry;
+    // }
 }
